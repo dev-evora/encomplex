@@ -1,0 +1,27 @@
+.footer
+  color: #fff
+  background: $color-black
+  height: 60px
+  .container
+    @include flexbox
+    align-items: center
+    height: 100%
+  &-nav
+    @include flexbox
+    align-items: center
+    font-size: 14px
+    li
+      margin-right: 90px
+      &:last-child
+        margin-right: 0
+      a
+        transition: .2s
+        border-bottom: 1px solid transparent
+        padding: 3px 0 2px
+        &:hover
+          border-color: #fff
+  &-copyright
+    margin-left: auto
+    font-size: 11px
+    b
+      font-size: 13px
