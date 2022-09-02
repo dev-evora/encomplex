@@ -1,1 +1,43 @@
-
+.header
+  padding: 20px 0
+  .container
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+  &-nav
+    font-size: 14px
+    @include flexbox
+    align-items: center
+    li
+      margin-right: 40px
+      &:last-child
+        margin-right: 0
+      a
+        border-bottom: 2px solid transparent
+        transition: .2s
+        padding: 4px 0 2px
+        display: block
+        &:hover
+          color: $color-orange
+          border-color: $color-orange
+  &-contact
+    &__phone
+      font-weight: 700
+      transition: .2s
+      &:hover
+        color: $color-orange
+    &__desc
+      font-size: 12px
+      color: #9e9e9e
+      margin-top: 4px
+      a
+        color: $color-black
+  &-btn
+    color: $color-blue
+    font-size: 13px
+    border: 1px solid $color-blue
+    padding: 7px 15px
+    transition: .2s
+    &:hover
+      background: $color-blue
+      color: #fff
