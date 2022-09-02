@@ -18,3 +18,27 @@ body
   margin: 0 auto
   position: relative
   z-index: 5
+
+.btn
+  padding: 20px 25px
+  display: block
+  font-size: 14px
+  font-weight: 700
+  line-height: 105%
+  transition: .2s
+  cursor: pointer
+  border: 0
+  &-wrap
+    @include flexbox
+    align-items: center
+  &-blue
+    background: $color-blue
+    color: #fff
+    &:hover
+      background: $color-orange
+  &-white
+    background: #fff
+    color: $color-blue
+    &:hover
+      background: $color-orange
+      color: #fff
