@@ -87,10 +87,10 @@ button {
 }
 p {
   margin: 0;
-  -ms-hyphens: auto;
+  /* -ms-hyphens: auto;
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
-  hyphens: auto;
+  hyphens: auto; */
   overflow: hidden;
 }
 b,
@@ -120,7 +120,7 @@ object,
 iframe,
 video {
   display: block;
-  margin: auto;
+  /* margin: auto; */
 }
 img {
   image-rendering: optimizeQuality;
