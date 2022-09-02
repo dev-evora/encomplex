@@ -63,12 +63,12 @@ address {
   margin: 0;
   padding: 0;
 }
-a,
+/* a,
 button,
 [type='button'],
 [type='submit'] {
   transition: color 0.25s, background 0.25s, opacity 0.25s;
-}
+} */
 a > *,
 button > *,
 [type='button'] > *,
