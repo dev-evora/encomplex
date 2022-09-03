@@ -32,3 +32,14 @@ const maskPhone = () => {
 };
 
 maskPhone();
+
+const videoplayer = document.querySelectorAll('.video');
+if (!!videoplayer) {
+  videoplayer.forEach((item) => {
+    const videoID = item.href.match(/^.*(youtu\.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/);
+
+    item.querySelectorAll('img').forEach((el) => {
+      el.setAttribute('src', `https://i.ytimg.com/vi/${videoID[2]}/sd1.jpg`);
+    });
+  });
+}
