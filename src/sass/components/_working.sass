@@ -1,0 +1,79 @@
+.working
+  padding: 70px 0 170px
+  color: #fff
+  background: url(../img/working-bg.jpg) no-repeat center
+  background-size: cover
+  counter-reset: working
+  &-steps
+    @include flexbox
+    align-items: flex-start
+    position: relative
+    margin-top: 70px
+    &__line
+      overflow: hidden
+      position: absolute
+      top: 10px
+      left: 0
+      right: 0
+      height: 4px
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: -10px
+        right: -10px
+        height: 4px
+        background-image: repeating-linear-gradient(0deg, #ffffff, #ffffff 1px, transparent 1px, transparent 10px, #ffffff 10px), repeating-linear-gradient(90deg, #ffffff, #ffffff 1px, transparent 1px, transparent 10px, #ffffff 10px), repeating-linear-gradient(180deg, #ffffff, #ffffff 1px, transparent 1px, transparent 10px, #ffffff 10px), repeating-linear-gradient(270deg, #ffffff, #ffffff 1px, transparent 1px, transparent 10px, #ffffff 10px)
+        background-size: 4px 100%, 100% 4px, 4px 100% , 100% 4px
+        background-position: 0 0, 0 0, 100% 0, 0 100%
+        background-repeat: no-repeat
+        -webkit-mask-image: linear-gradient(45deg, #000000 25%, rgba(0,0,0,0) 100%),
+    &__item
+      position: relative
+      flex: 1
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 24px
+        height: 24px
+        border-radius: 100%
+        border: 0.5px solid #fff
+        transition: .2s
+        z-index: -1
+      &::before
+        counter-increment: working
+        content: counter(working)
+        display: block
+        border-radius: 100%
+        width: 24px
+        height: 24px
+        background: #fff
+        color: $color-black
+        font-size: 16px
+        font-weight: 700
+        text-align: center
+        line-height: 24px
+        transition: .2s
+        cursor: pointer
+      &:hover
+        .working-steps__text
+          opacity: 1
+          visibility: visible
+        &::before
+          color: $color-orange
+          transform: scale(1.5)
+        &::after
+          transform: scale(2)
+    &__text
+      transition: .2s
+      position: absolute
+      left: 0
+      right: 10px
+      line-height: 105%
+      font-weight: 700
+      font-size: 14px
+      padding-top: 30px
+      opacity: 0
+      visibility: hidden
