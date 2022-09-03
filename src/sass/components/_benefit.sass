@@ -1,0 +1,43 @@
+.benefit
+  padding: 100px 0
+  .container
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+  &-content
+    .title
+      max-width: 440px
+  &-list
+    margin-top: 60px
+    li
+      @include flexbox
+      align-items: center
+      margin-top: 40px
+      max-width: 380px
+      &:first-child
+        margin-top: 0
+        margin-left: 10px
+      &:nth-child(2)
+        margin-left: 40px
+      &:nth-child(3)
+        margin-left: 60px
+      img
+        width: 52px
+        height: 52px
+        object-fit: scale-down
+        object-position: center
+      span
+        width: calc(100% - 52px - 10px)
+        margin-left: 10px
+        display: block
+      h4
+        font-size: 20px
+        line-height: 105%
+        font-weight: 700
+        & + p
+          margin-top: 5px
+      p
+        font-size: 14px
+  &-video
+    width: 595px
+    height: 335px
