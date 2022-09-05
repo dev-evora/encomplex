@@ -43,3 +43,14 @@ if (!!videoplayer) {
     });
   });
 }
+
+const storageSafeCarousel = new Swiper('.storage-safe__carousel', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.storage-safe__pagination',
+    clickable: true,
+  },
+});
