@@ -1,0 +1,25 @@
+.security
+  padding: 70px 0
+  color: #fff
+  background: url(../img/security-bg.jpg) no-repeat center
+  background-size: cover
+  .title
+    margin-bottom: 20px
+  &-list
+    @include flexbox
+    align-items: center
+    margin-top: 30px
+    li
+      @include flexbox
+      align-items: center
+      margin-right: 70px
+      margin-top: 30px
+      max-width: 310px
+      &:last-child
+        margin-right: 0
+      img
+        width: 50px
+      b
+        width: calc(100% - 50px)
+        padding-left: 25px
+        font-weight: 700
