@@ -23,12 +23,12 @@ const maskPhone = () => {
       mask: '+7 (000) 000-00-00',
     };
     el.forEach((item) => {
-      maskedElements.push(new IMask(item, mask));
+      item.addEventListener('click', (e) => {
+        if (e.target.value === '') item.value = '+7 ';
+        maskedElements.push(new IMask(item, mask));
+      });
     });
   }
-  $('.masked').click(function () {
-    if ($(this).val() == '') $(this).val('+7 ');
-  });
 };
 
 maskPhone();

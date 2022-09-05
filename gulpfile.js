@@ -79,7 +79,7 @@ const js = () => {
 };
 
 const libs_js = () => {
-  return src(['src/js/vendor/jquery.fancybox.min.js', 'src/js/vendor/swiper-bundle.min.js', 'src/js/vendor/jquery.inputmask.min.js'])
+  return src(['src/js/vendor/jquery.fancybox.min.js', 'src/js/vendor/swiper-bundle.min.js', 'src/js/vendor/imask.js'])
     .pipe(map.init())
     .pipe(isMinify ? uglify() : noop())
     .pipe(isMinify ? concat('libs.min.js') : concat('libs.js'))
