@@ -54,3 +54,16 @@ const storageSafeCarousel = new Swiper('.storage-safe__carousel', {
     clickable: true,
   },
 });
+
+const complexSlider = new Swiper('.complex-slider', {
+  slidesPerView: 6,
+  spaceBetween: 30,
+  pagination: {
+    el: '.complex-count',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.complex-arrow__next',
+    prevEl: '.complex-arrow__prev',
+  },
+});

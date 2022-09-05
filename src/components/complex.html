@@ -1,0 +1,24 @@
+<h2 class="title">Комплексное решение для вашей отрасли</h2>
+<h3 class="subtitle">Мы предлагаем пакеты услуг, заточенные под вашу область</h3>
+<div class="complex-slider">
+  <div class="complex-control">
+    <div class="complex-arrow complex-arrow__prev"></div>
+    <div class="complex-count"></div>
+    <div class="complex-arrow complex-arrow__next"></div>
+  </div>
+  <div class="swiper-wrapper">
+    {% set items = [
+      { img: "img/complex-item-1.jpg", title: "Химическая и нефтехимическая отрасль" },
+      { img: "img/complex-item-2.jpg", title: "Энергетика" },
+      { img: "img/complex-item-3.jpg", title: "Автостроение и транспорт" },
+      { img: "img/complex-item-4.jpg", title: "Электротехника и электроника" },
+      { img: "img/complex-item-5.jpg", title: "Целлюлозно-бумажная отрасль" },
+      { img: "img/complex-item-6.jpg", title: "Строительные материалы и упаковка" },
+      { img: "img/complex-item-7.jpg", title: "Оборудование и приборостроение" },
+      { img: "img/complex-item-8.jpg", title: "Бытовая химия" },
+      { img: "img/complex-item-9.jpg", title: "ТНП" }
+    ] %}
+    {% for item in items %} <div class="swiper-slide">{% include 'components/complex-item.html' %}</div> {% endfor %}
+  </div>
+</div>
+<div class="btn-wrap"><a href="#" class="btn btn-blue">Рассчитать комплекс услуг</a></div>
