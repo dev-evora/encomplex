@@ -98,6 +98,7 @@ body
           object-fit: scale-down
           object-position: center
           transition: .2s
+          filter: invert(100%)
         p
           width: calc(100% - 36px)
           padding-left: 12px
@@ -107,6 +108,8 @@ body
     &__white li a
       background: #fff
       color: $color-black
+      img
+        filter: invert(0%)
       &:hover
         color: #fff
         img
