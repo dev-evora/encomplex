@@ -1,0 +1,67 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Отрасли' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">Решения для отраслей</h2>
+        <h3 class="subtitle">Весь комплекс логистики и хранения грузов для бизнесов разных направлений</h3>
+        <div class="head-list__title"><h4>Ваша выгода:</h4></div>
+        <ul class="head-list">
+          <li>
+            <img src="img/svg/head-1.svg" alt="">
+            <p>Опыт наших специалистов более 10 лет</p>
+          </li>
+          <li>
+            <img src="img/svg/head-2.svg" alt="">
+            <p>Персональный менеджер для каждого клиента</p>
+          </li>
+          <li>
+            <img src="img/svg/head-2.svg" alt="">
+            <p>Персональный менеджер для каждого клиента</p>
+          </li>
+        </ul>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-catalog.jpg" alt="">
+        <img src="img/head-catalog.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="complex complex-gray">
+  <div class="container">
+    <div class="complex-row">
+      {% set items = [
+        { img: "img/complex-item-1.jpg", title: "Химическая и нефтехимическая отрасль" },
+        { img: "img/complex-item-2.jpg", title: "Энергетика" },
+        { img: "img/complex-item-3.jpg", title: "Автостроение и транспорт" },
+        { img: "img/complex-item-4.jpg", title: "Электротехника и электроника" },
+        { img: "img/complex-item-5.jpg", title: "Целлюлозно-бумажная отрасль" },
+        { img: "img/complex-item-6.jpg", title: "Строительные материалы и упаковка" },
+        { img: "img/complex-item-7.jpg", title: "Оборудование и приборостроение" },
+        { img: "img/complex-item-8.jpg", title: "Бытовая химия" },
+        { img: "img/complex-item-9.jpg", title: "ТНП" }
+      ] %}
+      {% for item in items %} {% include 'components/complex-item.html' %} {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include 'components/benefit.html' %}
+
+{% include 'components/offer.html' %}
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}
