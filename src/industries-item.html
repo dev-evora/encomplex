@@ -1,0 +1,98 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Страница отрасли' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">Химическая и нефтехимическая отрасль</h2>
+        <h3 class="subtitle">Весь комплекс логистики и хранения грузов для бизнесов разных направлений</h3>
+        <div class="head-list__title"><h4>Ваша выгода:</h4></div>
+        <ul class="head-list">
+          <li>
+            <img src="img/svg/head-1.svg" alt="">
+            <p>Опыт наших специалистов более 10 лет</p>
+          </li>
+          <li>
+            <img src="img/svg/head-2.svg" alt="">
+            <p>Персональный менеджер для каждого клиента</p>
+          </li>
+          <li>
+            <img src="img/svg/head-2.svg" alt="">
+            <p>Персональный менеджер для каждого клиента</p>
+          </li>
+        </ul>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-catalog.jpg" alt="">
+        <img src="img/head-catalog.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="storage">
+  <div class="container">
+    <div class="storage-section">
+      <h2 class="title title-full">Комплекс услуг для перевозки и хранения стройматериалов:</h2>
+      <ul class="section-list section-list__small">
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы </p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include 'components/text-section.html' %}
+
+{% include 'components/text-big.html' %}
+
+{% include 'components/benefit.html' %}
+
+{% include 'components/offer.html' %}
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}
