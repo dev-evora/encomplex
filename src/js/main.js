@@ -67,3 +67,14 @@ const complexSlider = new Swiper('.complex-slider', {
     prevEl: '.complex-arrow__prev',
   },
 });
+
+const inputFile = document.querySelectorAll('input[type="file"]');
+if (!!inputFile) {
+  inputFile.forEach((input) => {
+    const wrapper = input.closest('.label');
+    const text = wrapper.querySelector('p');
+    input.addEventListener('change', (e) => {
+      e.target.files.length > 0 ? (text.innerText = e.target.files[0].name) : (text.innerText = 'Прикрепите ТЗ');
+    });
+  });
+}
