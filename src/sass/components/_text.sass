@@ -1,0 +1,60 @@
+.text
+  padding: 70px 0
+  &-row
+    @include flexbox
+    align-items: flex-start
+    justify-content: space-between
+  &-content
+    h2
+      font-size: 40px
+      font-weight: 700
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+    h3
+      font-size: 20px
+      font-weight: 700
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+    p
+      font-size: 14px
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+    &__big
+      width: calc(100% - 390px - 60px)
+    &__section
+      width: calc(100% - 650px - 60px)
+  &-img
+    width: 100%
+    max-width: 390px
+
+  &-section
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    margin-top: 70px
+    &:first-child
+      margin-top: 0
+    &__img
+      width: 650px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 20px
+        left: 20px
+        right: -20px
+        bottom: -20px
+        border: 2px solid $color-blue
+      img
+        width: 100%
+    &:nth-child(2n)
+      .text-section__img
+        order: 1
+        &::before
+          top: 20px
+          left: -20px
+          right: 20px
+          bottom: -20px
