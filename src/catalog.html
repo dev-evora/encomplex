@@ -1,0 +1,112 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Каталог услуг' %}
+
+{% block content %}
+
+<section class="storage">
+  <div class="container">
+    <div class="storage-section">
+      <img src="img/storage-loader.jpg" alt="" class="storage-loader">
+      <h2 class="title">Услуги по хранению и обработке грузов:</h2>
+      <ul class="section-list">
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы для всех видов транспорта</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-3.svg" alt="">
+            <p>Подготовка складской сопроводительной и транспортной документации</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-4.svg" alt="">
+            <p>Выпуск отчетов для клиентов по движению товаров</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-5.svg" alt="">
+            <p>Инвентаризация товаров (выборочная, циклическая, полная)</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-6.svg" alt="">
+            <p>Комплектация заказов (попалетная, коробочная, поштучная) с учетом заданных критериев</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-7.svg" alt="">
+            <p>Формирование паллет с обвязкой стрейч-пленкой</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-8.svg" alt="">
+            <p>Услуги по приему и утилизации брака</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="storage-section">
+      <h2 class="title">Сопутствующие услуги:</h2>
+        <ul class="section-list">
+          <li>
+            <a href="#">
+              <img src="img/svg/accompanying-1.svg" alt="">
+              <p>Ответственное хранение товаров</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/svg/accompanying-2.svg" alt="">
+              <p>Доставка по технологии just-in-time (точно в срок)</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/svg/accompanying-3.svg" alt="">
+              <p>Выполнение требований грузовладельца FIFO</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/svg/accompanying-4.svg" alt="">
+              <p>Отгрузка со склада или экспедирование товаров до склада грузополучателя</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/svg/accompanying-5.svg" alt="">
+              <p>Кросс-докинг (перегрузка товаров для последующей транспортировки)</p>
+            </a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</section>
+
+<section class="complex complex-gray">
+  <div class="container">
+    {% include 'components/complex.html' %}
+  </div>
+</section>
+
+{% include 'components/qr.html' %}
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}
