@@ -1,0 +1,148 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Каталог услуг' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">Комплектация заказов (попалетная, коробочная, поштучная) с учетом заданных критериев</h2>
+        <h3 class="subtitle">(точно в срок)</h3>
+        <div class="head-list__title"><h4>Ваша выгода:</h4></div>
+        <ul class="head-list">
+          <li>
+            <img src="img/svg/head-1.svg" alt="">
+            <p>Опыт наших специалистов более 10 лет</p>
+          </li>
+          <li>
+            <img src="img/svg/head-2.svg" alt="">
+            <p>Персональный менеджер для каждого клиента</p>
+          </li>
+        </ul>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-service-item.jpg" alt="">
+        <img src="img/head-service-item.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="storage">
+  <div class="container">
+    <div class="storage-section">
+      <h2 class="title">Подразделы этого раздела:</h2>
+      <ul class="section-list">
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы для всех видов транспорта</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include 'components/text-section.html' %}
+
+<section class="conditions">
+  <div class="container">
+    <h2 class="title">Условия на наших складах:</h2>
+    <ul class="conditions-list">
+      <li><img src="img/svg/conditions-1.svg" alt=""><b>Удобное расположение</b></li>
+      <li><img src="img/svg/conditions-2.svg" alt=""><b>Современные системы пожаротушения</b></li>
+      <li><img src="img/svg/conditions-3.svg" alt=""><b>Температурный режим хранения 15 - 25°С</b></li>
+      <li><img src="img/svg/conditions-4.svg" alt=""><b>Соблюдаем уровень влажности</b></li>
+      <li><img src="img/svg/conditions-5.svg" alt=""><b>Есть всё оборудование для разгрузки- погрузки</b></li>
+    </ul>
+  </div>
+</section>
+
+<section class="price">
+  <div class="container">
+    <h2 class="title">Цены на наши услуги:</h2>
+    <div class="price-block">
+      <div class="price-table">
+        <div class="price-row">
+          <div class="price-col">Услуга</div>
+          <div class="price-col">Цена</div>
+        </div>
+        <div class="price-row">
+          <div class="price-col">Ручная погрузка/разгрузка</div>
+          <div class="price-col">от 5 руб./уп.</div>
+        </div>
+        <div class="price-row">
+          <div class="price-col">Ручная погрузка/разгрузка</div>
+          <div class="price-col">от 5 руб./уп.</div>
+        </div>
+        <div class="price-row">
+          <div class="price-col">Ручная погрузка/разгрузка</div>
+          <div class="price-col">от 5 руб./уп.</div>
+        </div>
+        <div class="price-row">
+          <div class="price-col">Ручная погрузка/разгрузка</div>
+          <div class="price-col">от 5 руб./уп.</div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-wrap"><a href="#" class="btn btn-blue">Рассчитать комплекс услуг</a></div>
+  </div>
+</section>
+
+{% include 'components/text-big.html' %}
+
+{% include 'components/offer.html' %}
+
+{% include 'components/qr.html' %}
+
+<section class="seo">
+  <div class="container">
+    <p>Наши складские помещения для хранения грузов и личных вещей расположены в удобных местах, в черте города, оборудованы всей необходимой техникой и принадлежностями. У нас можно хранить любые виды личных вещей, мебели, товаров и оборудования, других грузов на паллетах. Склады ответхранения оборудованы удобной стеллажной системой, есть индивидуальные боксы для сохранности небольших партий товаров или личных вещей.</p>
+  </div>
+</section>
+
+<section class="storage">
+  <div class="container">
+    <div class="storage-section">
+      <h2 class="title title-full">Если этот способ хранения вам не подходит, мы можем предложить вам другие:</h2>
+      <ul class="section-list">
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-1.svg" alt="">
+            <p>Погрузо-разгрузочные работы для всех видов транспорта</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/svg/storage-2.svg" alt="">
+            <p>Сортировка груза при приеме</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}
