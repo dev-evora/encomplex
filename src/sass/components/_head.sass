@@ -1,0 +1,63 @@
+.head
+  padding-top: 30px
+  &-breadcrumbs
+    font-size: 14px
+    display: block
+    width: 100%
+    margin-bottom: 30px
+    li
+      display: inline
+      color: #9B9B9B
+      &::after
+        content: "/"
+        padding-left: 4px
+      &:last-child::after
+        display: none
+  &-row
+    @include flexbox
+    align-items: center
+  &-content
+    max-width: 575px
+    padding-right: 25px
+    width: 100%
+    .subtitle
+      font-weight: 700
+      margin: 20px 0
+      &:last-child
+        margin-bottom: 0
+  &-poster
+    width: calc(100% - 575px)
+    height: 375px
+    position: relative
+    img
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: calc(100% + 100px)
+      max-width: initial
+      object-fit: cover
+      object-position: center
+      &:nth-child(2)
+        top: 20px
+        left: -20px
+        z-index: -1
+        opacity: 0.4
+  &-list
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    li
+      @include flexbox
+      align-items: center
+      margin-top: 20px
+      width: calc(100% / 2 - 20px)
+      img
+        width: 48px
+        height: 48px
+        object-fit: scale-down
+        object-position: center
+      p
+        width: calc(100% - 48px)
+        padding-left: 15px
+        font-size: 14px
