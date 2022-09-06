@@ -1,0 +1,38 @@
+.price
+  padding: 70px 0
+  background: url(../img/price-bg.jpg) no-repeat center
+  background-size: cover
+  .title
+    color: #fff
+    margin-bottom: 40px
+  &-block
+    background: #fff
+    padding: 30px
+  .btn-wrap
+    justify-content: center
+    margin-top: 40px
+  &-row
+    @include flexbox
+    border-bottom: 1px solid #D7D7D7
+    font-size: 14px
+    &:first-child
+      background: $color-blue
+      color: #fff
+      font-weight: 700
+      font-size: 16px
+      .price-col
+        &:first-child
+          border-left: 1px solid $color-blue
+        &:nth-child(2)
+          border-left: 1px solid #fff
+          border-right: 1px solid $color-blue
+  &-col
+    @include flexbox
+    align-items: center
+    padding: 15px 30px
+    border-left: 1px solid #D7D7D7
+    &:nth-child(1)
+      flex: 1
+    &:nth-child(2)
+      border-right: 1px solid #D7D7D7
+      width: 250px
