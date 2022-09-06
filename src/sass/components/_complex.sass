@@ -55,3 +55,11 @@
 
   &-gray
     background: #f3f3f3
+
+  &-row
+    @include flexbox
+    align-items: flex-start
+    margin: -30px -15px 0
+    .complex-item
+      width: calc(100% / 6 - 30px)
+      margin: 30px 15px 0
