@@ -27,7 +27,7 @@
         margin-bottom: 0
   &-poster
     width: calc(100% - 575px)
-    height: 375px
+    height: 420px
     position: relative
     img
       position: absolute
@@ -61,3 +61,13 @@
         width: calc(100% - 48px)
         padding-left: 15px
         font-size: 14px
+    &__title
+      @include flexbox
+      align-items: center
+      margin-top: 40px
+      h4
+        background: $color-blue
+        font-size: 20px
+        font-weight: 700
+        color: #fff
+        padding: 5px 10px
