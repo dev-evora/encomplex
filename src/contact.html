@@ -1,0 +1,109 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Контакты' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">Контакты</h2>
+        <h3 class="subtitle">Весь комплекс услуг логистики<br> и хранения грузов</h3>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-catalog.jpg" alt="">
+        <img src="img/head-catalog.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="contact-phone">
+      <a href="tel:8 (800) 123-45-67">8 (800) 123-45-67</a>
+      <p>Бесплатный звонок по России</p>
+    </div>
+    <div class="contact-row">
+      <div class="contact-col">
+        <h2>Менеджер по работе с клиентами:</h2>
+        <ul class="contact-list">
+          <li>
+            <p>Телефон:</p>
+            <p>+7 (812) 337-59-39</p>
+          </li>
+          <li>
+            <p>E-mail:</p>
+            <p>Kanc@encomplex.ru</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-col">
+        <h2>Терминальное обслуживание:</h2>
+        <ul class="contact-list">
+          <li>
+            <p>Телефон:</p>
+            <p>+7 (812) 337-59-39</p>
+          </li>
+          <li>
+            <p>E-mail:</p>
+            <p>Kanc@encomplex.ru</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-col">
+        <h2>Адрес склада в СПб:</h2>
+        <p>94292, Санкт-Петербург, п/з Парнас, 1-й Верхний переулок, д.4.</p>
+      </div>
+      <div class="contact-col">
+        <h2>Режим работы:</h2>
+        <p>с 9:00 до 19:00</p>
+      </div>
+    </div>
+    <div class="contact-map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8e60ed5bd1f31f2f2342ad351c218f320a132cef2f909e921fed19aac7caa4f9&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script></div>
+    <div class="contact-info">
+      <div class="offer-form contact-info__form">
+        <h3>Получите индивидуальное предложение</h3>
+        <form action="#">
+          <label class="label">
+            <input type="text" name="" class="input" placeholder="Контактное лицо*" required />
+          </label>
+          <label class="label">
+            <input type="tel" name="" class="input masked" placeholder="Номер телефона*" required />
+          </label>
+          <label class="label">
+            <input type="email" name="" class="input" placeholder="E-mail*" required />
+          </label>
+          <label class="label">
+            <textarea name="" class="textarea" placeholder="Комментарий: укажите данные груза, его особенности, ваши пожелания о доставке"></textarea>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" required checked />
+            <p>Согласие на обработку персональных данных*</p>
+          </label>
+          <button type="submit" class="btn btn-blue">Отправить сообщения</button>
+        </form>
+      </div>
+      <div class="contact-info__text">
+        <p>Юридический адрес: 94292, Санкт-Петербург, п/з Парнас, 1-й Верхний переулок, д.4.</p>
+        <p>ИНН: 1111111111</p>
+        <p>КПП: 11111111111</p>
+        <p>ОГРН: 1111111</p>
+        <p>р/с: 4070245646455070000456 в Северо-Западный банк ПАО «Сбербанк» г. Санкт-Петербург</p>
+        <p>к/с: 4643123132121321231321321321</p>
+        <p>БИК: 464564654</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}

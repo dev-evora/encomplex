@@ -1,0 +1,65 @@
+.contact
+  padding: 70px 0
+  &-phone
+    @include flexbox
+    align-items: center
+    a
+      font-weight: 700
+      font-size: 20px
+    p
+      font-size: 14px
+      padding-left: 30px
+  &-row
+    @include flexbox
+    align-items: flex-start
+    justify-content: space-between
+  &-col
+    width: 50%
+    margin-top: 40px
+    h2
+      margin-bottom: 15px
+      font-size: 20px
+      font-weight: 700
+    p
+      font-size: 14px
+  &-list
+    li
+      @include flexbox
+      align-items: flex-start
+      margin-top: 10px
+      &:first-child
+        margin-top: 0
+      p
+        width: 50%
+  &-map
+    position: relative
+    overflow: hidden
+    height: 450px
+    margin-top: 40px
+    & > ymaps
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100% !important
+      height: 100% !important
+  &-info
+    padding-top: 70px
+    position: relative
+    &__text
+      max-width: 450px
+      margin-left: auto
+      margin-right: 40px
+      font-size: 14px
+      min-height: 240px
+      p
+        margin-top: 15px
+        &:first-child
+          margin-top: 0
+    &__form
+      margin: 0
+      border: 2px solid $color-black
+      position: absolute
+      left: 100px
+      bottom: 0
