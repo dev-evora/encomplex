@@ -84,3 +84,16 @@ const containerWidth = document.querySelector('.container').clientWidth;
 const offestWidth = (windowWidth - containerWidth) / 2;
 const mapRight = document.querySelector('.contact-map__fix');
 if (!!mapRight) mapRight.style.right = `${offestWidth * -1 - 10}px`;
+
+const gallerySlider = new Swiper('.gallery-slider', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.gallery-count',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.gallery-arrow__next',
+    prevEl: '.gallery-arrow__prev',
+  },
+});

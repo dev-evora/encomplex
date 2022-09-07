@@ -1,0 +1,25 @@
+.gallery
+  padding-top: 70px
+  &-slider
+    overflow: hidden
+    img
+      height: 230px
+      width: 100%
+      object-fit: cover
+      object-position: center
+  &-control
+    @include flexbox
+    align-items: center
+    justify-content: center
+    margin-top: 30px
+  &-count
+    font-weight: 700
+    width: auto
+    margin: 0 10px
+  &-arrow
+    width: 24px
+    height: 19px
+    cursor: pointer
+    background: url(../img/svg/complex-arrow.svg) no-repeat center
+    &__prev
+      transform: rotate(180deg)
