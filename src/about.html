@@ -1,0 +1,84 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'О компании' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">О компании</h2>
+        <h3 class="subtitle">Весь комплекс услуг логистики<br> и хранения грузов</h3>
+        <div class="about-text">
+          <p>Сегодня Электронкомплекс - это успешно реализованный проект с учетом новейших технологий в области складской логистики, соответствующий всем стандартам современного склада и ориентированный на предоставление полного, качественного и высокотехнологичного пакета услуг складского и логистического сопровождения.</p>
+          <p>Грамотный подход к организации работы позволил на площади в 3,41 га разместить два современных складских комплекса категории В и В+ общей вместимостью до 16 000 паллетомест,  выделить помещение для складирования особо ценных товаров и площади для напольного хранения.</p>
+        </div>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-catalog.jpg" alt="">
+        <img src="img/head-catalog.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="target">
+  <div class="container">
+    <h2 class="title">Наша цель</h2>
+    <p>В рамках одного предприятия мы стремимся предоставлять максимально полный набор логистических услуг высочайшего качества.</p>
+    <a href="https://www.youtube.com/watch?v=v74_mf2usc0" data-fancybox class="target-video video"><img src="" alt=""></a>
+  </div>
+</section>
+
+<section class="history">
+  <div class="container">
+    <h2 class="title">История предприятия</h2>
+    <div class="history-row">
+      <div class="history-col">
+        <p>Предприятие проектировалось и использовалось как складской комплекс для перевалки и хранения импортных товаров для нужд электронной промышленности.</p>
+        <p>В настоящее время складской терминал "Электронкомплекс" используется для приема, хранения и отправки грузов различного характера, поступающих и отправляемых как железнодорожным, так и автомобильным транспортом.</p>
+        <p>В течение 2005-2006 гг. на предприятии проведена реконструкция склада основного здания. После реконструкции, за счет рационального использования существующих площадей, использования современной погрузочной техники и внедрения современных технологий документооборота, появилась возможость оказывать услуги на более высоком уровне.</p>
+      </div>
+      <div class="history-col">
+        <p>Система "Автоматизированный склад" существенно снижает время обработки груза. Современные логистические решения позволяют одновременно принимать и отгружать грузы разным потребителям без пересечения транспортных потоков внутри склада. Система пожаротушения и охранной сигнализации позволяют надежно защищать хранимые грузы и предотвращают несанкционированный доступ на территорию склада.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="container">
+    <div class="gallery-slider">
+      <div class="swiper-wrapper">
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+        <a href="img/offer-bg.jpg" data-fancybox class="swiper-slide"><img src="img/offer-bg.jpg" alt=""></a>
+      </div>
+      <div class="gallery-control">
+        <div class="gallery-arrow gallery-arrow__prev"></div>
+        <div class="gallery-count"></div>
+        <div class="gallery-arrow gallery-arrow__next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'components/qr.html' %}
+
+{% include 'components/sert.html' %}
+
+{% include 'components/offer.html' %}
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}
