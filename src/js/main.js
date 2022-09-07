@@ -78,3 +78,9 @@ if (!!inputFile) {
     });
   });
 }
+
+const windowWidth = document.body.clientWidth;
+const containerWidth = document.querySelector('.container').clientWidth;
+const offestWidth = (windowWidth - containerWidth) / 2;
+const mapRight = document.querySelector('.contact-map__fix');
+if (!!mapRight) mapRight.style.right = `${offestWidth * -1 - 10}px`;
