@@ -1,0 +1,96 @@
+.news
+  padding: 70px 0
+  &-row
+    @include flexbox
+    // align-items: flex-start
+    margin: -30px -15px 0
+  &-item
+    width: calc(100% / 3 - 30px)
+    margin: 30px 15px 0
+    position: relative
+    overflow: hidden
+    &__img
+      width: 100%
+      height: 240px
+      object-fit: cover
+      object-position: center
+    &__content
+      padding-top: 15px
+    &__date
+      font-size: 14px
+      color: #898787
+      display: block
+      text-align: right
+      margin-bottom: 5px
+    &__title
+      font-size: 20px
+      font-weight: 700
+      &::before
+        content: ''
+        position: absolute
+        top: -500px
+        left: -500px
+        right: -500px
+        bottom: -500px
+    &__text
+      font-size: 14px
+      height: 130px
+      overflow: hidden
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+      text-overflow: ellipsis
+      p
+        margin-top: 15px
+    &:first-child
+      width: calc((100% / 3) * 2 - 30px)
+      .news-item__content
+        background: #fff
+        padding: 15px 30px 30px
+        max-width: 430px
+        position: absolute
+        bottom: 20px
+        left: 20px
+      .news-item__img
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+
+  &-popup
+    display: none
+    padding: 20px
+    max-width: 840px
+    .news-item__img
+      height: 400px
+    .news-item__text
+      height: auto
+    .fancybox-close-small
+      padding: 0 !important
+      width: 20px !important
+      height: 20px !important
+
+  &-year
+    max-width: 540px
+    overflow: hidden
+    width: 100%
+    margin-top: 50px
+    &__slider
+      width: 90px
+      font-weight: 700
+      .swiper-slide-active
+        color: $color-blue
+        text-decoration: underline
+
+  &-control
+    @include flexbox
+    align-items: center
+    margin-top: 30px
+  &-arrow
+    width: 24px
+    height: 19px
+    cursor: pointer
+    background: url(../img/svg/complex-arrow.svg) no-repeat center
+    &__prev
+      transform: rotate(180deg)
+      margin-right: 20px

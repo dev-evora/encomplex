@@ -1,0 +1,73 @@
+{% extends 'components/_layout.html' %}
+{% set site_title = 'Новости' %}
+
+{% block content %}
+
+<section class="head">
+  <div class="container">
+    <ul class="head-breadcrumbs">
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Услуги</a></li>
+    </ul>
+    <div class="head-row">
+      <div class="head-content">
+        <h2 class="title">Новости</h2>
+        <h3 class="subtitle">Весь комплекс услуг логистики<br> и хранения грузов</h3>
+        <div class="news-year">
+          <div class="news-year__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">2022</div>
+              <div class="swiper-slide">2021</div>
+              <div class="swiper-slide">2020</div>
+              <div class="swiper-slide">2019</div>
+              <div class="swiper-slide">2018</div>
+              <div class="swiper-slide">2017</div>
+              <div class="swiper-slide">2016</div>
+              <div class="swiper-slide">2015</div>
+            </div>
+            <div class="news-control">
+              <div class="news-arrow news-arrow__prev"></div>
+              <div class="news-arrow news-arrow__next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head-poster">
+        <img src="img/head-catalog.jpg" alt="">
+        <img src="img/head-catalog.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="container">
+    <div class="news-row">
+      {% include 'components/news-item.html' %}
+      {% include 'components/news-item.html' %}
+      {% include 'components/news-item.html' %}
+      {% include 'components/news-item.html' %}
+      {% include 'components/news-item.html' %}
+      {% include 'components/news-item.html' %}
+    </div>
+  </div>
+</section>
+
+<div class="news-popup" id="news-popup-100">
+  <img src="img/head-service-item.jpg" alt="" class="news-item__img">
+  <div class="news-item__content">
+    <small class="news-item__date">12 июля 2022</small>
+    <h2 class="news-item__title">Заголовок новости</h2>
+    <div class="news-item__text">
+      <p>АО «Электронкомплекс» получен QR-код, подтверждающий готовность выполнения стандарта безопасной деятельности организации (в соответствии с Постановлением Правительства Санкт-Петербурга от 13.03.2020 № 121 «О мерах по противодействию распространению в Санкт-Петербурге новой коронавирусной инфекции (COVID-19)».</p>
+      <p>АО «Электронкомплекс» получен QR-код, подтверждающий готовность выполнения стандарта безопасной деятельности организации (в соответствии с Постановлением Правительства Санкт-Петербурга от 13.03.2020 № 121 «О мерах по противодействию распространению в Санкт-Петербурге новой коронавирусной инфекции (COVID-19)».</p>
+      <p>АО «Электронкомплекс» получен QR-код, подтверждающий готовность выполнения стандарта безопасной деятельности организации (в соответствии с Постановлением Правительства Санкт-Петербурга от 13.03.2020 № 121 «О мерах по противодействию распространению в Санкт-Петербурге новой коронавирусной инфекции (COVID-19)».</p>
+    </div>
+  </div>
+</div>
+
+{% include 'components/ask.html' %}
+
+{% include 'components/contact.html' %}
+
+{% endblock %}

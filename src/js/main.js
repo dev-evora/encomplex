@@ -97,3 +97,16 @@ const gallerySlider = new Swiper('.gallery-slider', {
     prevEl: '.gallery-arrow__prev',
   },
 });
+
+const newsYear = new Swiper('.news-year__slider', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.news-arrow__next',
+    prevEl: '.news-arrow__prev',
+  },
+});
+
+newsYear.on('beforeTransitionStart', () => {
+  const year = document.querySelector('.swiper-slide-active').innerText;
+  console.log(`checked: ${year}`);
+});
