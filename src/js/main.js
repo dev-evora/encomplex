@@ -56,7 +56,7 @@ const storageSafeCarousel = new Swiper('.storage-safe__carousel', {
 });
 
 const complexSlider = new Swiper('.complex-slider', {
-  slidesPerView: 6,
+  slidesPerView: 5,
   spaceBetween: 30,
   pagination: {
     el: '.complex-count',
@@ -65,6 +65,11 @@ const complexSlider = new Swiper('.complex-slider', {
   navigation: {
     nextEl: '.complex-arrow__next',
     prevEl: '.complex-arrow__prev',
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 6,
+    },
   },
 });
 
