@@ -15,7 +15,7 @@ const notify = require('gulp-notify');
 const noop = require('gulp-noop');
 const listing = require('is-pagelist');
 
-const isMinify = true;
+const isMinify = false;
 
 const clean = () => del(['app']);
 
