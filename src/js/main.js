@@ -56,7 +56,7 @@ const storageSafeCarousel = new Swiper('.storage-safe__carousel', {
 });
 
 const complexSlider = new Swiper('.complex-slider', {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: '.complex-count',
@@ -72,6 +72,9 @@ const complexSlider = new Swiper('.complex-slider', {
     },
     1024: {
       slidesPerView: 5,
+    },
+    768: {
+      slidesPerView: 4,
     },
   },
 });
@@ -94,7 +97,7 @@ const mapRight = document.querySelector('.contact-map__fix');
 if (!!mapRight) mapRight.style.right = `${offestWidth * -1 - 10}px`;
 
 const gallerySlider = new Swiper('.gallery-slider', {
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 30,
   pagination: {
     el: '.gallery-count',
@@ -103,6 +106,11 @@ const gallerySlider = new Swiper('.gallery-slider', {
   navigation: {
     nextEl: '.gallery-arrow__next',
     prevEl: '.gallery-arrow__prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
   },
 });
 
