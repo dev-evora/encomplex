@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-logo"><a href="/"><img src="img/svg/logo.svg" alt=""></a></div>
     <ul class="header-nav">
-      <li><a href="#">Услуги</a></li>
+      <li class="js-dropdown" data-dropdown="service"><a href="#">Услуги</a></li>
       <li><a href="#">Решения для отраслей</a></li>
       <li><a href="#">О нас</a></li>
       <li><a href="#">Контакты</a></li>
@@ -18,5 +18,31 @@
     </div>
     <a href="javascript:;" data-fancybox data-src="#popup-map" class="header-btn">Как добраться</a>
     <div class="header-burger"></div>
+  </div>
+  <div class="header-dropdown" data-dropdown="service">
+    <div class="container">
+      <div class="header-dropdown__row">
+        <ul class="header-dropdown__menu">
+          <li data-submenu="1"><a href="#">Ответственное хранение и доставка грузов</a></li>
+          <li data-submenu="2"><a href="#">Обработка грузов</a></li>
+        </ul>
+        <div class="header-dropdown__submenu" data-submenu="1">
+          <ul>
+            <li><a href="#">Ответственное хранение товаров</a></li>
+            <li><a href="#">Доставка по технологии just-in-time (точно в срок)</a></li>
+            <li><a href="#">Кросс-докинг (перегрузка товаров для последующей транспортировки)</a></li>
+            <li><a href="#">Выполнение требований грузовладельца FIFO</a></li>
+            <li><a href="#">Отгрузка со склада или экспедирование товаров до склада грузополучателя</a></li>
+          </ul>
+        </div>
+        <div class="header-dropdown__submenu" data-submenu="2">
+          <ul>
+            <li><a href="#">Какой-то раздел 1</a></li>
+            <li><a href="#">Какой-то раздел 2</a></li>
+            <li><a href="#">Какой-то раздел 3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </header>

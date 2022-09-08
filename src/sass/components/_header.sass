@@ -20,6 +20,9 @@
         &:hover
           color: $color-orange
           border-color: $color-orange
+      &.active a
+        color: $color-orange
+        border-color: $color-orange
   &-contact
     &__phone
       font-weight: 700
@@ -47,3 +50,85 @@
     height: 32px
     background: $color-blue url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8H28V10H4V8Z' fill='white'/%3E%3Cpath d='M4 15H28V17H4V15Z' fill='white'/%3E%3Cpath d='M4 22H28V24H4V22Z' fill='white'/%3E%3C/svg%3E%0A")
     display: none
+
+  // &-dropdown
+  //   background: #fff
+  //   padding: 40px 0
+  //   position: absolute
+  //   left: 0
+  //   right: 0
+  //   z-index: 100
+  //   box-shadow: 0 0 20px 10px rgba(0,0,0,.15)
+  //   display: none
+  //   &__menu
+  //     max-width: 290px
+  //     font-size: 16px
+  //     li
+  //       margin-top: 40px
+  //       &:first-child
+  //         margin-top: 0
+  //       a
+  //         transition: .2s
+  //         &:hover
+  //           color: $color-orange
+  //   &__mob
+  //     display: none
+  //   &__row
+  //     @include flexbox
+  //   &__submenu
+  //     width: calc(100% - 290px - 60px)
+  //     max-width: 600px
+  //     border-left: 1px solid #eee
+  //     padding-left: 60px
+  //     margin-left: 60px
+  //     display: none
+  //     ul
+  //       @include flexbox
+  //       align-items: flex-start
+  //       justify-content: space-between
+  //       font-size: 16px
+  //       li
+  //         margin-top: 40px
+  //         margin-bottom: 0
+  //         width: calc(100% / 2 - 20px)
+  //         &:first-child, &:nth-child(2)
+  //           margin-top: 0
+  //         a
+  //           transition: .2s
+  //           &:hover
+  //             color: $color-orange
+
+  &-dropdown
+    border-top: 1px solid #eee
+    border-bottom: 1px solid #eee
+    position: absolute
+    top: 86px
+    left: 0
+    right: 0
+    background: #fff
+    display: none
+    z-index: 100
+    font-size: 14px
+    li
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+      a
+        transition: .2s
+        &:hover
+          color: $color-orange
+      &.active
+        color: $color-orange
+    &__row
+      @include flexbox
+    &__menu
+      padding: 40px
+      padding-left: 0
+      width: 320px
+      border-right: 1px solid #eee
+    &__submenu
+      width: calc(100% - 320px)
+      padding: 40px
+      display: none
+      &:first-child
+        display: block
