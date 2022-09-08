@@ -1,8 +1,17 @@
 .promo
   padding: 100px 0
   color: #fff
-  background: url(../img/promo-bg.jpg) no-repeat center
-  background-size: cover
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: url(../img/promo-bg.jpg) no-repeat center
+    background-size: cover
+    z-index: -1
   h1
     font-size: 64px
     font-weight: 700
