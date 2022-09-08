@@ -56,8 +56,8 @@ const storageSafeCarousel = new Swiper('.storage-safe__carousel', {
 });
 
 const complexSlider = new Swiper('.complex-slider', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 10,
   pagination: {
     el: '.complex-count',
     type: 'fraction',
@@ -75,6 +75,10 @@ const complexSlider = new Swiper('.complex-slider', {
     },
     768: {
       slidesPerView: 4,
+    },
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 30,
     },
   },
 });
@@ -98,7 +102,7 @@ if (!!mapRight) mapRight.style.right = `${offestWidth * -1 - 10}px`;
 
 const gallerySlider = new Swiper('.gallery-slider', {
   slidesPerView: 2,
-  spaceBetween: 30,
+  spaceBetween: 10,
   pagination: {
     el: '.gallery-count',
     type: 'fraction',
@@ -110,6 +114,9 @@ const gallerySlider = new Swiper('.gallery-slider', {
   breakpoints: {
     768: {
       slidesPerView: 3,
+    },
+    576: {
+      spaceBetween: 30,
     },
   },
 });
