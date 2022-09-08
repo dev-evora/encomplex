@@ -133,3 +133,7 @@ newsYear.on('beforeTransitionStart', () => {
   const year = document.querySelector('.swiper-slide-active').innerText;
   console.log(`checked: ${year}`);
 });
+
+document.querySelector('.header-burger').addEventListener('click', () => {
+  document.querySelector('.header-nav').classList.toggle('active');
+});
